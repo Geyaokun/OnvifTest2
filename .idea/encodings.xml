@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/libs/nanohttpd-2.2.0.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/ClientHandler.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/HTTPSession.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/IHTTPSession.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/NanoHTTPD.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/ServerRunnable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/content" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/request" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/response" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/sockets" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/tempfiles" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/protocols/http/threading" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nanohttpd/util" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
