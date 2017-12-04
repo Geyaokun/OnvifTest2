@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, uuid);
         sendResponse();
     }
-
+     1
     private void sendResponse() {
         new Thread(new Runnable() {
             @Override
