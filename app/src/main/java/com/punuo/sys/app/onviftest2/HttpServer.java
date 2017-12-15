@@ -8,8 +8,11 @@ import org.nanohttpd.protocols.http.request.Method;
 import org.nanohttpd.protocols.http.response.IStatus;
 import org.nanohttpd.protocols.http.response.Response;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import static org.nanohttpd.protocols.http.response.Response.newFixedLengthResponse;
@@ -45,22 +48,9 @@ public class HttpServer extends NanoHTTPD {
     public HttpServer(int port) {
         super(port);
     }
-
     @Override
     public Response serve(IHTTPSession session) {
         Log.d(TAG, "serve: "+"收到消息");
-        Log.d(TAG, "serve: "+session.getUri());
-        try {
-            session.parseBody(new HashMap<String, String>());
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ResponseException e) {
-            e.printStackTrace();
-        }
-        Map<String, String> parms=session.getParms();
-        if (parms!=null){
-        Log.d(TAG, "serve: "+session.getMethod()+parms.toString());}
-        /*我在这里做了一个限制，只接受POST请求。这个是项目需求。*/
         if (Method.POST.equals(session.getMethod())) {
             Map<String, String> files = new HashMap<String, String>();
             /*获取header信息，NanoHttp的header不仅仅是HTTP的header，还包括其他信息。*/
